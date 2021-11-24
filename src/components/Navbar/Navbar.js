@@ -130,7 +130,7 @@ class Navbar extends Component {
                   />
                   <div className="cart-count">9+</div>
                 </div>
-                <label className="flex align-center fz-16 bold ps-1">
+                <label className="flex align-center fz-14 bold ps-1">
                   Cart
                 </label>
               </div>
@@ -143,7 +143,7 @@ class Navbar extends Component {
                     alt=""
                   />
                 </div>
-                <label className="flex align-center fz-16 bold ps-1">
+                <label className="flex align-center fz-14 bold ps-1">
                   Wishlist
                 </label>
               </div>
@@ -156,7 +156,7 @@ class Navbar extends Component {
                     alt=""
                   />
                 </div>
-                <label className="flex align-center fz-16 bold ps-1">
+                <label className="flex align-center fz-14 bold ps-1">
                   Login
                 </label>
               </div>

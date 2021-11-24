@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Card from "../../components/Card/Card";
 import Slider from "../../components/Slider/Slider";
 import brandLogo from "../../images/brandLogo.svg";
 import color1 from "../../images/color1.png";
@@ -158,6 +159,26 @@ class ItemDetails extends Component {
             <p className="font-lightGray fz-14 py m-0">
               You may like these products also
             </p>
+            <div className="w-100 scroll-x-secondary flex justify-between py-2">
+              <div className="" style={{ width: "220px" }}>
+                <Card />
+              </div>
+              <div className="ms-2" style={{ width: "220px" }}>
+                <Card />
+              </div>
+              <div className="ms-2" style={{ width: "220px" }}>
+                <Card />
+              </div>
+              <div className="ms-2" style={{ width: "220px" }}>
+                <Card />
+              </div>
+              <div className="ms-2" style={{ width: "220px" }}>
+                <Card />
+              </div>
+              <div className="ms-2" style={{ width: "220px" }}>
+                <Card />
+              </div>
+            </div>
           </div>
         </div>
       </div>
