@@ -13,6 +13,21 @@ body {
 .w-100 {
   width: 100%;
 }
+.w-50 {
+  width: 50%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-5 {
+  width: 5%;
+}
+.w-25 {
+  width: 25%;
+}
+.w-90 {
+  width: 90%;
+}
 .p {
   padding: 4px;
 }
@@ -40,6 +55,9 @@ body {
 }
 .p-2 {
   padding: 16px;
+}
+.pb-2 {
+  padding-bottom: 16px;
 }
 .px-2 {
   padding-left: 16px;
@@ -85,6 +103,18 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.ms {
+  margin-inline-start: 4px;
+}
+.ms-1 {
+  margin-inline-start: 8px;
+}
+.m-0 {
+  margin: 0px;
+}
+.fz-20 {
+  font-size: 24px;
+}
 .fz-16 {
   font-size: 16px;
 }
@@ -94,8 +124,23 @@ body {
 .fz-12 {
   font-size: 12px;
 }
+.fz-10 {
+  font-size: 10px;
+}
 .font-white {
   color: #fff !important;
+}
+.font-lightGray {
+  color: #a7a9ac !important;
+}
+.font-gray {
+  color: #575756 !important;
+}
+.font-secondary {
+  color: $secondary !important;
+}
+.font-primary {
+  color: $primary !important;
 }
 .font-red {
   color: #f11133 !important;
@@ -106,6 +151,9 @@ body {
 }
 .text-underline {
   text-decoration: underline;
+}
+.line-through {
+  text-decoration: line-through;
 }
 .weight-medium {
   font-weight: 500;
@@ -119,8 +167,14 @@ body {
 .align-center {
   align-items: center;
 }
+.align-end {
+  align-items: flex-end;
+}
 .align-start {
   align-items: flex-start;
+}
+.justify-center {
+  justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
@@ -131,8 +185,17 @@ body {
 .bg-primary {
   background-color: $primary;
 }
+.bg-secondary {
+  background-color: $secondary;
+}
 .bg-black {
   background-color: #000;
+}
+.bg-lightGray {
+  background-color: #d9d9d9;
+}
+.bg-lightGray2 {
+  background-color: #f5f5f5;
 }
 .container {
   width: 70%;
@@ -140,10 +203,19 @@ body {
   margin-right: auto;
 }
 .border {
-  border: 1px solid #aaa;
+  border: 1px solid #d9d9d9;
+}
+.border-radius-3 {
+  border-radius: 3px;
+}
+.br-20 {
+  border-radius: 20px;
 }
 .border-b {
   border-bottom: 1px solid #868686;
+}
+.border-b-lightGray {
+  border-bottom: 1px solid #d9d9d9;
 }
 .relative {
   position: relative;
@@ -206,4 +278,22 @@ body {
   color: #000;
   font-size: 12px;
   font-weight: 600;
+}
+.selected-size {
+  background-color: #d9d9d9;
+  color: #1d1d1b !important;
+}
+.selected-image {
+  border: 1px solid $secondary;
+  border-radius: 50%;
+}
+.circle-50 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.circle-25 {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
 }
