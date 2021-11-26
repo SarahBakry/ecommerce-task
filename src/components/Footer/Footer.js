@@ -46,10 +46,10 @@ class Footer extends Component {
             <div className="w-60 p-3 flex flex-wrap pt-0">
               <p className="fz-12 bold m-0">Subscribe to our newsletter</p>
               <div className="w-100">
-                <div class="subscribe-input">
+                <div className="subscribe-input">
                   <input
                     type="text"
-                    class="form-control"
+                    className="form-control"
                     placeholder="Enter Your Mail"
                   />
                   <button className="flex align-center px-2">
