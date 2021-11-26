@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React, { Component, Suspense, lazy } from "react";
 import "./App.scss";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ItemDetails from "./pages/ItemDetails/ItemDetails";
 import Navbar from "./components/Navbar/Navbar";
 import { history } from "./services/helpers/history";
 import Footer from "./components/Footer/Footer";
-
+const ItemDetails = lazy(() => import("./pages/ItemDetails/ItemDetails"));
 class App extends Component {
   constructor(props) {
     super(props);
@@ -45,24 +44,26 @@ class App extends Component {
             setCartItems={this.setCartItems.bind(this)}
             setCartItemsTotalCount={this.setCartItemsTotalCount.bind(this)}
           />
-          <Routes>
-            <Route
-              /* path="/ecommerce-task/" */
-              exact
-              path="/"
-              element={
-                <ItemDetails
-                  cartItems={this.state.cartItems}
-                  setCartItems={this.setCartItems.bind(this)}
-                  setBrandLogo={this.setBrandLogo.bind(this)}
-                  setBreadcrumb={this.setBreadcrumb.bind(this)}
-                  setCartItemsTotalCount={this.setCartItemsTotalCount.bind(
-                    this,
-                  )}
-                />
-              }
-            ></Route>
-          </Routes>
+          <Suspense fallback={<div className="loading">Loading ...</div>}>
+            <Routes>
+              <Route
+                /* path="/ecommerce-task/" */
+                exact
+                path="/"
+                element={
+                  <ItemDetails
+                    cartItems={this.state.cartItems}
+                    setCartItems={this.setCartItems.bind(this)}
+                    setBrandLogo={this.setBrandLogo.bind(this)}
+                    setBreadcrumb={this.setBreadcrumb.bind(this)}
+                    setCartItemsTotalCount={this.setCartItemsTotalCount.bind(
+                      this,
+                    )}
+                  />
+                }
+              ></Route>
+            </Routes>
+          </Suspense>
           <Footer />
         </Router>
       </div>
